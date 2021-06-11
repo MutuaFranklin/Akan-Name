@@ -40,7 +40,15 @@ Open Terminal. Change the current working directory to the location where you wa
 
 ```
 Type https://github.com/MutuaFranklin/Akan-Name and press Enter to create your local clone.
+
 ```
+
+## BDD
+As a user, I would like to;
+- See a  small description of what the application does on the landing page.
+- Enter my birthday through a form.
+- Choose what gender I am.
+- Click the submit button to see day of the week i was born, age, and what my Akan name would be.
 
 ## Technologies Used
 
