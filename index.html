@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <script src="./static/js/main.js"></script>
+    <title>B&A Calculator</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-custom" id="landingnav"> 
+        <a class="navbar-brand" href="#">B&A CALCULATOR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                <ul class="nav navbar-nav menu_nav ms-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-fw fa-home"></i>BIRTHDAY</a></li> 
+                    
+                </ul>
+            </div>
+    </nav>
+    <div class="container-fluid ">
+        <div class="col-md-12" id="mainbox" >
+            <div class="card text-center col-md-6">
+                <div class="card-header" id="card-nav">
+                  <ul class="nav nav-tabs card-header-tabs" id="nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="true" onclick="return description();">Description</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" onclick="return entryForm();">Birthday Calculator</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                <div class="card-body" >
+                  <div id="description">
+                    
+                    <p> 
+                      B&A Calculator is a web application that takes a user's birthday and calculates the day of the week they were born, age, star sign, and then depending on their gender outputs their Akan Name. 
+                    </p>
+                    <p>
+                      Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day 
+                      in the week they were born. 
+                    </p>
+                  </div>
+                    <form class="col-md-12" id="pform">
+                      <div class="row" id="formContainer">
+                        <div class="mb-3 col-md-2">
+                          <label for="date" class="form-label">Date of birth</label>
+                          <input type="number" class="form-control" id="dob"  placeholder="Enter date" required>
+                        </div>
+                        <div class="mb-3 col-md-2" >
+                          <label for="month" class="form-label">Month of birth</label>
+                          <input type="number" class="form-control" id="mob"  placeholder="Enter month" required>
+                        </div>
+                        <div class="mb-3 col-md-2">
+                          <label for="year" class="form-label">Year of birth</label>
+                          <input type="number" class="form-control" id="yob"  placeholder="Enter year" required>
+                        </div>
+                        <div class="mb-3 col-md-2">
+                            <label for="gender" class="form-label">Gender</label>
+                            <select class="form-select" aria-label="Default select example" id="gender" required>
+                                <option selected>Gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                      </div>   
+                      <div class="row col-md-5">                        
+                        <button type="submit" class="btn btn-primary" id="submitBtn" onclick="return getBirthDetails();">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+          </div>
+            
+      
+
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-header outputText">
+                      <ul class="nav nav-pills card-header-pills">
+                        <li class="nav-item" id="dobText">
+                            <p id="dateBirth"></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body" id="cards-holder" >
+                        <div class="card border-secondary mb-3 col-md-4" style="max-width: 18rem;">
+                            <div class="card-header">Day of birth</div>
+                            <div class="card-body text-secondary" id="oBox">
+                              <h5 class="card-title" id="dayImage"></h5>
+                              <p class="card-text" id="dayName"></p>
+                            </div>
+                          </div>
+                          <div class="card border-secondary mb-3 col-md-4" style="max-width: 18rem;">
+                            <div class="card-header">Age</div>
+                            <div class="card-body text-secondary" id="oBox">
+                              <h5 class="card-title"id="ageImage"></h5>
+                              <p class="card-text" id="age"></p>
+                            </div>
+                          </div>
+                          <div class="card border-secondary mb-3 col-md-4" style="max-width: 18rem;">
+                            <div class="card-header">Akan Name</div>
+                            <div class="card-body text-secondary" id="oBox">
+                              <h5 class="card-title"id="akanImage"></h5>
+                              <p class="card-text" id="akan"></p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+
+            </div>
+
+
+            <div class="col-md-6" >
+              <div class="card text-center">
+                  <div class="card-header outputText">
+                    <ul class="nav nav-pills card-header-pills">
+                      <li class="nav-item" id="dobText">
+                          <p id="starSign"></p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-body starbox" id="cards-holder">
+
+                    <p id="starMeaning"></p>
+                      
+                  </div>
+                </div>
+
+          </div>
+                
+        </div>
+    </div>
+
+
+
+<!-- /*============================================================================================ */
+/*  FOOTER
+============================================================================================ */   -->
+
+<footer>
+
+  <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Frankfreek. </p>
+      
+</footer>
+    
+</body>
+</html>
