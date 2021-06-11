@@ -115,6 +115,57 @@ function getBirthDetails(){
     }
 
 
+//Month name
+
+    if (mm==1){
+        monthName = "January";
+    }
+    else if(mm==2){
+        monthName = "February";
+
+    }
+    else if(mm==3   ){
+        monthName = "March";
+
+    }
+    else if(mm==4){
+        monthName = "April";
+
+    }
+    else if(mm==5){
+        monthName = "May";
+
+    }
+    else if(mm==6){
+        monthName = "June";
+
+    }
+    else if(mm==7){
+        monthName = "July";
+
+    }
+    else if(mm==8){
+        monthName = "August";
+
+    }
+    else if(mm==9){
+        monthName = "September";
+
+    }
+    else if(mm==10){
+        monthName = "October";
+
+    }
+    else if(mm==11){
+        monthName = "November";
+
+    }
+    else if(mm==12){
+        monthName = "December";
+
+    }
+
+
         
 
 
