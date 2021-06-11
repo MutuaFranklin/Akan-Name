@@ -13,6 +13,7 @@ function entryForm() {
     document.getElementById("pform").style.display = " block";
     document.getElementById("description").style.display = "none";
 
+
 }
 
 function getBirthDetails() {
@@ -258,7 +259,6 @@ function getBirthDetails() {
 
     document.getElementById("starcontainer").style.display = "block";
 
-    document.getElementById("respofooter").style.marginTop = "1200px";
 
 
 
