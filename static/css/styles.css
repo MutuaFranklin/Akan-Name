@@ -197,7 +197,6 @@ label{
 footer{
     width: 100%;
     display: flex;
-    position: fixed;
     justify-content: center;
     background:linear-gradient(75deg, rgb(24, 29, 28), #1ecbe1, rgb(36, 2, 2));
 }
