@@ -31,6 +31,23 @@ function getBirthDetails(){
 
     }
 
+// Trim the first two numbers of the year to get the century digits
+    var str_cc = year.toString();
+    var cc = Number(str_cc.slice(0, 2));
+
+
+// Trim the last two numbers of the year to get the year digits
+    var str_yy = year.toString();
+    var yy = Number(str_yy.slice(2, 4));
+
+
+    var mm = month;
+    var dd = date;
+
+
+    var day = ( ( ( (cc/4) -2 * cc-1) + ((5* yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7).toFixed();
+
+
 
 
 
