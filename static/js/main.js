@@ -165,9 +165,31 @@ function getBirthDetails(){
 
     }
 
+//Age
+     var dob_f =  (dd+ "/" + mm  + "/" +year);
 
-        
+     var dob_n = new Date(dob_f);  
 
+     //calculate month difference from current date in time  
+     var month_diff = Date.now() - dob_n.getTime();  
+       
+     //convert the calculated difference in date format  
+     var age_dt = new Date(month_diff);   
+       
+     //extract year from date      
+     var year_ag = age_dt.getUTCFullYear();  
+       
+     //now calculate the age of the user  
+     var age = Math.abs(year_ag - 1970);  
+
+     if (age>1){
+         y = "Years"
+     }
+     else{
+         y = "Year"
+     }
+       
+ 
 
 
 
