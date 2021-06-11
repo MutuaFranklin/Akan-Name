@@ -2,6 +2,8 @@
 function description(){
     document.getElementById("description").style.display = " block";
     document.getElementById("pform").style.display = "none";
+
+
 }
 
 //Display form and not description
@@ -264,10 +266,17 @@ function getBirthDetails(){
     document.getElementById("akan").innerHTML = akanName;
 
      //Star sign
-     document.getElementById("starSign").innerHTML =  "Your star sign is: " + star;
+    document.getElementById("starSign").innerHTML =  "Your star sign is: " + star;
 
 
-     document.getElementById("starMeaning").innerHTML =  "Your star sign is: " + meaning;
+    document.getElementById("starMeaning").innerHTML =  "Your star sign is: " + meaning;
+
+
+    document.getElementById("starcontainer").style.display = "block";
+
+    document.getElementById("respofooter").style.marginTop = "1200px";
+
+
 
 
 

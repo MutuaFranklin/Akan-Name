@@ -42,6 +42,9 @@
         background-color: blue;
     }
 
+    #starcontainer{
+        display: none;
+    }
     .starbox{
         height: 48vh;
         margin-bottom: 20px;
@@ -55,7 +58,7 @@
     }
 
     footer{
-        margin-top: 1150px;
+        margin-top: 600px;
     }
     
      
