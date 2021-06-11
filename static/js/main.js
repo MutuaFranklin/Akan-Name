@@ -251,6 +251,30 @@ function getBirthDetails(){
     
 
 
+    //Date of Birth(dd/mm/yy)
+    document.getElementById("dateBirth").innerHTML = "Your date of birth is: " + dd + " " + monthName + " "+ year;
+
+    //Day of Birth(Mon, Tue, Wed....)
+    document.getElementById("dayName").innerHTML = dayName;
+
+    //Date of Age
+    document.getElementById("age").innerHTML = age + " " + y;
+
+    //Akan name()
+    document.getElementById("akan").innerHTML = akanName;
+
+     //Star sign
+     document.getElementById("starSign").innerHTML =  "Your star sign is: " + star;
+
+
+     document.getElementById("starMeaning").innerHTML =  "Your star sign is: " + meaning;
+
+
+
+
+
+    
+
 
 
         
