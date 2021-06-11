@@ -147,26 +147,32 @@ function getBirthDetails() {
     }
 
     //Age
-    var dob_f = (dd + "/" + mm + "/" + year);
+    
 
-    var dob_n = new Date(dob_f);
+    var today = new Date();
+    var d_age = today.getFullYear() - year;
+    var cm = today.getMonth() + 1;
+    if (cm>=mm){
+        age = d_age;
+        md = cm - mm;
+    }
+    else{
+        age = (d_age -1);
+        md = 12+ (cm-mm);
+    }
 
-    //calculate month difference from current date in time  
-    var month_diff = Date.now() - dob_n.getTime();
+    if (age>1){
+        y = "Years";
+    }
+    else{
+        y = Year
+    }
 
-    //convert the calculated difference in date format  
-    var age_dt = new Date(month_diff);
-
-    //extract year from date      
-    var year_ag = age_dt.getUTCFullYear();
-
-    //now calculate the age of the user  
-    var age = Math.abs(year_ag - 1970);
-
-    if (age > 1) {
-        y = "Years"
-    } else {
-        y = "Year"
+    if (md > 1){
+        month = "Months"
+    }
+    else{
+        month = "Month"
     }
 
 
@@ -238,7 +244,7 @@ function getBirthDetails() {
     document.getElementById("dayName").innerHTML = dayName;
 
     //Date of Age
-    document.getElementById("age").innerHTML = age + " " + y;
+    document.getElementById("age").innerHTML = age + " " + y + " " + "and" + " " + md + " " + month;
 
     //Akan name()
     document.getElementById("akan").innerHTML = akanName;
