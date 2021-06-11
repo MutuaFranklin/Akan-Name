@@ -50,7 +50,7 @@ Type https://github.com/MutuaFranklin/Akan-Name and press Enter to create your l
 
 ## Live link
 
-[Portfolio live link:](https://mutuafranklin.github.io/Akan-Name/)
+Live link: [Portfolio live link](https://mutuafranklin.github.io/Akan-Name/)
 
 ## Support and contact details
 
