@@ -121,6 +121,10 @@ label{
 
 }
 
+#submitBtn:hover{
+    color: greenyellow;
+}
+
 .outputText{
     background-color: rgb(183, 241, 237);
 }
