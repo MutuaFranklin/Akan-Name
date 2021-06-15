@@ -186,14 +186,14 @@ label{
 }
 
 .starbox{
-    height: 20vh;
+    height: 19vh;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaFUzDYKIfyRy-1uB8iPfNJsHmom0Bfsk4doaY04yMrH7gOikquzrqQ5usrIIsybHegqQ&usqp=CAU");
     background-size: cover;
     border-radius: 5px;
 }
 
 .starbox p{
-    font-size: 13px;
+    font-size: 14px;
     line-height: 2;
 
 
