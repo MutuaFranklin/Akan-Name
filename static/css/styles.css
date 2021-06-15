@@ -55,7 +55,7 @@ nav a:hover{
     height: 89vh;
     display: flex;
     flex-direction: column;
-    background-image: url("https://image.freepik.com/free-vector/white-elegant-texture-background-theme_23-2148415644.jpg");
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/HD-playstation-ps3-themes-background-free.jpg");    
     background-size: cover;
 
 }
@@ -186,7 +186,7 @@ label{
 }
 
 .starbox{
-    height: 18vh;
+    height: 20vh;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaFUzDYKIfyRy-1uB8iPfNJsHmom0Bfsk4doaY04yMrH7gOikquzrqQ5usrIIsybHegqQ&usqp=CAU");
     background-size: cover;
     border-radius: 5px;
