@@ -52,7 +52,8 @@ nav a:hover{
     
  }
 .container-fluid{
-    height: 89vh;
+    /* height: 89vh; */
+    height: 844px;
     display: flex;
     flex-direction: column;
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/HD-playstation-ps3-themes-background-free.jpg");    
@@ -74,7 +75,7 @@ nav a:hover{
     background-size: cover;
     border-radius: 10px;
     line-height: 2;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #formContainer{
@@ -165,7 +166,7 @@ label{
 }
 
 #dayImage{
-    height: 22vh;
+    height: 220px;
     width: 100%;
     background-image: url("https://resize.indiatvnews.com/en/resize/newbucket/715_-/2021/04/erth-day-1619061680.jpg");
     background-size: cover;
@@ -173,27 +174,28 @@ label{
 
 
 #ageImage{
-    height: 22vh;
+    height: 220px;
     width: 100%;
     background-image: url("https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/90/48/db/9048db36-6928-825f-c0b6-975986ea31a5/source/512x512bb.jpg");
     background-size: cover;
 }
 #akanImage{
-    height: 22vh;
+    height: 220px;
     width: 100%;
     background-image: url("http://myfirstname.rocks/meaning-of-names/akan-td1f150b0ac291f9aa947d3b9c000b6b90a6d3b8577214e841205bee18763298bk.png");
     background-size: cover;
 }
 
 .starbox{
-    height: 19vh;
+    /* height: 19vh; */
+    height: 180px;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaFUzDYKIfyRy-1uB8iPfNJsHmom0Bfsk4doaY04yMrH7gOikquzrqQ5usrIIsybHegqQ&usqp=CAU");
     background-size: cover;
     border-radius: 5px;
 }
 
 .starbox p{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 2;
 
 
